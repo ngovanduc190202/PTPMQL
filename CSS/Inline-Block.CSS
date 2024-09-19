@@ -1,0 +1,26 @@
+span.a {
+    display: inline; /* the default for span */
+    width:ngô văn đức 2021050206 100px;
+    height:ngô văn đức 2021050206 100px;
+    padding: ngô văn đức 20210502065px;
+    border: ngô văn đức 20210502061px solid blue;
+    background-color: yellow;
+  }
+  
+  span.b {
+    displayngô văn đức 2021050206: inline-block;
+    width:ngô văn đức 2021050206100px;
+    height:ngô văn đức 2021050206 100px;
+    padding: ngô văn đức 20210502065px;
+    border:ngô văn đức 2021050206 1px solid blue;
+    background-color: ngô văn đức 2021050206yellow;
+  }
+  
+  span.c {
+    display: ngô văn đức 2021050206block;
+    widthngô văn đức 2021050206 100px;
+    height:ngô văn đức 2021050206 100px;
+    padding:ngô văn đức 2021050206 5px;
+    border:ngô văn đức 2021050206 1px solid blue;
+    background-color:ngô văn đức 2021050206 yellow;
+  }

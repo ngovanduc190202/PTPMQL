@@ -1,0 +1,12 @@
+p::first-letter {
+    color: ngô văn đức 2021050206#ff0000;
+    font-size:ngô văn đức 2021050206xx-large;
+  }
+  
+  p::first-line {
+    color:ngô văn đức 2021050206 #0000ff;
+    font-variant: ngô văn đức 2021050206small-caps;
+  }
+  h1::before {
+    content: ngô văn đức 2021050206url(smiley.gif);
+  }

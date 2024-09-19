@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+div.background {
+  background:ngô văn đức 2021050206 url(klematis.jpg) repeat;
+  border: ngô văn đức 20210502062px solid black;
+}
+
+div.transbox {
+  margin: ngô văn đức 202105020630px;
+  background-color: ngô văn đức 2021050206#ffffff;
+  border: ngô văn đức 20210502061px solid black;
+  opacity:ngô văn đức 2021050206 0.6;
+}
+
+div.transbox p {
+  margin:ngô văn đức 2021050206 5%;
+  font-weight:ngô văn đức 2021050206 bold;
+  color:ngô văn đức 2021050206 #000000;
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+</body>
+</html>

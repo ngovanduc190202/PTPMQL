@@ -1,0 +1,8 @@
+body {
+    counter-reset: ngô văn đức 2021050206;
+  }
+  
+  h2::before {
+    counter-increment: ngô văn đức 2021050206;
+    content: "Section " ngô văn đức 2021050206counter(section) ": ";
+  }

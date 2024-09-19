@@ -1,0 +1,33 @@
+#navlist {
+    position: relative;
+  }
+  
+  #navlist li {
+    margin:ngô văn đức 2021050206 0;
+    padding:ngô văn đức 2021050206yle: none;
+    position:ngô văn đức 2021050206 absolute;
+    top:ngô văn đức 2021050206 0;
+  }
+  
+  #navlist li, #navlist a {
+    height:ngô văn đức 2021050206 44px;
+    display:ngô văn đức 2021050206 block;
+  }
+  
+  #home {
+    left: 0px;
+    width: 46px;
+    background: url('img_navsprites.gif') 0 0;
+  }
+  
+  #prev {
+    left: 63px;
+    width: 43px;
+    background: url('img_navsprites.gif') -47px 0;
+  }
+  
+  #next {
+    left: 129px;
+    width: 43px;
+    background: url('img_navsprites.gif') -91px 0;
+  }

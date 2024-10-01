@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMvc.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241001062505_Create_Table_Person")]
-    partial class Create_Table_Person
+    [Migration("20241001083959_Create_Table_Employee")]
+    partial class Create_Table_Employee
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,6 +22,11 @@ namespace DemoMvc.Migrations
             modelBuilder.Entity("DemoMvc.Models.Person", b =>
                 {
                     b.Property<string>("cancuoccongdan")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(8)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("hoten")
@@ -35,6 +40,10 @@ namespace DemoMvc.Migrations
                     b.HasKey("cancuoccongdan");
 
                     b.ToTable("Person");
+
+                    b.HasDiscriminator().HasValue("Person");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("DemoMvc.Models.student", b =>
@@ -49,6 +58,17 @@ namespace DemoMvc.Migrations
                     b.HasKey("fullname");
 
                     b.ToTable("student");
+                });
+
+            modelBuilder.Entity("DemoMvc.Models.Employee", b =>
+                {
+                    b.HasBaseType("DemoMvc.Models.Person");
+
+                    b.Property<string>("SDT")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasDiscriminator().HasValue("Employee");
                 });
 #pragma warning restore 612, 618
         }
